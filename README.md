@@ -1,1 +1,1 @@
-not a readme
+Use this for your own garbage website!
