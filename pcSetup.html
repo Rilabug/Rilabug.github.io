@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Setup</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background: linear-gradient(to bottom, #4facfe, #00f2fe);
+            font-family: Arial, sans-serif;
+        }
+
+        .category-bar {
+            width: 100%;
+            background-color: #4facfe;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .categories div {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #00f2fe;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .categories div:hover {
+            background-color: #4facfe;
+            transform: scale(1.1);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+        }
+
+        .button-container button {
+            padding: 15px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ffffff;
+            color: #4facfe;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .button-container button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="category-bar">
+        <div class="categories">
+            <div>Details</div>
+            <div>Specifications</div>
+            <div>Reviews</div>
+            <div>Buy Now</div>
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <a href="https://www.amazon.com/AMD-Ryzen-5700X3D-16-Thread-Processor/dp/B0CQ4H4H7X" target="_blank">
+            <button>Ryzen 7 5700X3D</button>
+        </a>
+        <a href="https://www.amazon.com/MSI-192-bit-FreeSync-DirectX-Graphics/dp/B09YHTMKL2/" target="_blank">
+            <button>AMD Radeon 6750 XT</button>
+        </a>
+        <a href="https://www.amazon.com/Razer-Huntsman-Special-Optical-Keyboard/dp/B0C87HZZ19/" target="_blank">
+            <button>Razer Huntsman Mini</button>
+        </a>
+        <a href="https://www.amazon.com/HyperX-SoloCast-Microphone-Tap-Mute/dp/B08KFL3SFV" target="_blank">
+            <button>HyperX SoloCast Microphone</button>
+        </a>
+        <a href="https://www.amazon.com/SteelSeries-Rival-Gaming-Mouse-Programmable/dp/B08176SM7C" target="_blank">
+            <button>SteelSeries Rival 3</button>
+        </a>
+    </div>
+</body>
+</html>
