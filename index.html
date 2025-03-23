@@ -1,51 +1,97 @@
-<title>Dimas's very shitty website!!!</title>
-<meta content="Dimas's very shitty website (will be reworked)" property="og:title" />
-<meta content="This is the very shitty website that Rilabug#6444 on Discord made, please send hate mail to that Discord account." property="og:description" />
-<meta content="https://rilabug.github.io" property="og:url" />
-<meta content="https://rilabug.github.io/batarongOSwallpaper.png" property="og:image" />
-<meta name="twitter:card" content="summary_large_image">
-<meta content="#0000FF" data-react-helmet="true" name="theme-color" />
-<style>
-body {
-</style>
-
- <button class="button button1">2px</button>
-<button class="button button2">4px</button>
-<button class="button button3">8px</button>
-<button class="button button4" onclick="window.location.href='https://youtube.com/@blue-spy-j4g';">My YT channel!!!</button>
-<button class="button button5" onclick="window.location.href='https://discord.gg/9J4p9nbbYR';">
-  My Discord Server
-<style>
-.button {
-  background-color: #406be2af;
-  border: none;
-  color: rgb(55, 0, 255);
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-}
-
-.button1 {border-radius: 2px;}
-.button2 {border-radius: 4px;}
-.button3 {border-radius: 8px;}
-.button4 {border-radius: 12px;}
-.button5 {border-radius: 50%;}
-</style>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>To create HTML dynamic pages</title>
-  <style>
-      body {
-          text-align: center;
-      }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Page</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #4facfe, #00f2fe);
+            font-family: Arial, sans-serif;
+        }
 
-      p {
-          color: green;
-      }
-  </style>
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .categories div {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #4facfe;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .categories div:hover {
+            background-color: #00f2fe;
+            transform: scale(1.1);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row; /* Default to row for desktop layout */
+            gap: 15px;
+        }
+
+        .button-container button {
+            padding: 15px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ffffff;
+            color: #4facfe;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .button-container button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+    </style>
 </head>
+<body>
+    <div class="categories">
+        <div>Category 1</div>
+        <div>Category 2</div>
+        <div>Category 3</div>
+    </div>
 
-            
+    <div class="button-container">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+        <button>Button 5</button>
+    </div>
+
+    <script>
+        // Check the user agent and adjust layout
+        document.addEventListener('DOMContentLoaded', () => {
+            const userAgent = navigator.userAgent.toLowerCase();
+            const buttonContainer = document.querySelector('.button-container');
+
+            if (/mobile|android|iphone|ipad|ipod/.test(userAgent)) {
+                // If the user is on a mobile device, change layout to column
+                buttonContainer.style.flexDirection = 'column';
+            } else {
+                // Default to row for desktop
+                buttonContainer.style.flexDirection = 'row';
+            }
+        });
+    </script>
+</body>
+</html>
