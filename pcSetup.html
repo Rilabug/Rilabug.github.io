@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Setup</title>
+    <title>My Equipment</title>
     <style>
         body {
             margin: 0;
@@ -85,7 +85,6 @@
             <div>Details</div>
             <div>Specifications</div>
             <div>Reviews</div>
-            <div>Buy Now</div>
         </div>
     </div>
     
@@ -106,5 +105,21 @@
             <button>SteelSeries Rival 3</button>
         </a>
     </div>
+
+    <script>
+        // Check the user agent and adjust layout
+        document.addEventListener('DOMContentLoaded', () => {
+            const userAgent = navigator.userAgent.toLowerCase();
+            const buttonContainer = document.querySelector('.button-container');
+    
+            if (/mobile|android|iphone|ipad|ipod/.test(userAgent)) {
+                // If the user is on a mobile device, change layout to column
+                buttonContainer.style.flexDirection = 'column';
+            } else {
+                // Default to row for desktop
+                buttonContainer.style.flexDirection = 'row';
+            }
+        });
+    </script>
 </body>
 </html>
